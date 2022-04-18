@@ -6061,7 +6061,8 @@ class UsuariosComponent {
     generarContrasena() {
         this._usuarioService.prepararContra(this.usuario._id).subscribe(response => {
             if (response) {
-                window.location.href = 'whatsapp://send?phone=52' + this.usuario.telefono + '&text=Tu%20cuenta%20est%C3%A1%20lista%20para%20que%20le%20cambies%20la%20contrase%C3%B1a.%20Para%20continuar,%20accede%20al%20siguiente%20enlace:%20https://ralph.com.mx/nueva-contra/' + this.usuario._id;
+                window.location.href = 'whatsapp://send?phone=52' + this.usuario.telefono + '&text=Tu%20cuenta%20est%C3%A1%20lista%20para%20que%20le%20cambies%20la%20contrase%C3%B1a.%20Para%20continuar,%20accede%20al%20siguiente%20enlace:%20https://ralph.tk/nueva-contra/' + this.usuario._id;
+                // window.location.href = 'whatsapp://send?phone=52' + this.usuario.telefono + '&text=Tu%20cuenta%20est%C3%A1%20lista%20para%20que%20le%20cambies%20la%20contrase%C3%B1a.%20Para%20continuar,%20accede%20al%20siguiente%20enlace:%20https://ralph.com.mx/nueva-contra/' + this.usuario._id;
             }
         }, error => {
             var errorMessage = error;
@@ -8220,9 +8221,12 @@ class InicioComponent {
         this.checkURL();
     }
     checkURL() {
-        if (window.location.host == 'www.ralph.com.mx') {
-            window.location.replace('https://ralph.com.mx');
+        if (window.location.host == 'www.ralph.tk') {
+            window.location.replace('https://ralph.tk');
         }
+        // if(window.location.host == 'www.ralph.com.mx'){
+        //     window.location.replace('https://ralph.com.mx')
+        // }
         // console.log(window.location.pathname);
         // console.log(document.URL);
     }
@@ -16053,7 +16057,8 @@ class PerfilRestaurantRComponent {
         selBox.style.left = '0';
         selBox.style.top = '0';
         selBox.style.opacity = '0';
-        selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
+        selBox.value = 'https://ralph.tk/restaurant/' + restauranteId;
+        // selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
         document.body.appendChild(selBox);
         selBox.focus();
         selBox.select();
@@ -16188,7 +16193,7 @@ PerfilRestaurantRComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["�
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "div", 27);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "div", 43);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "p", 44);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "https://ralph.com.mx/restaurant/ ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "https://ralph.tk/restaurant/ ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -17723,7 +17728,7 @@ function InicioRComponent_div_102_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 101);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 102);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "https://ralph.com.mx/restaurant/ ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "https://ralph.tk/restaurant/ ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -17935,7 +17940,8 @@ class InicioRComponent {
         selBox.style.left = '0';
         selBox.style.top = '0';
         selBox.style.opacity = '0';
-        selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
+        selBox.value = 'https://ralph.tk/restaurant/' + restauranteId;
+        // selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
         document.body.appendChild(selBox);
         selBox.focus();
         selBox.select();
@@ -21618,8 +21624,9 @@ CuponService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GLOBAL", function() { return GLOBAL; });
 var GLOBAL = {
+    url: 'https://ralph.tk/api/'
     // url: 'https://ralph.com.mx/api/'
-    url: 'http://localhost:3000/api/'
+    // url: 'http://localhost:3000/api/'
 };
 
 

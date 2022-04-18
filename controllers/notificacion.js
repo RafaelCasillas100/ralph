@@ -16,7 +16,8 @@ var Restaurante = require('../models/restaurante');
 var Pedido = require('../models/pedido');
 
 
-const api = 'https://ralph.com.mx/api/';
+const api = 'https://ralph.tk/api/';
+// const api = 'https://ralph.com.mx/api/';
 // const api = 'http://localhost:3000/api/';
 
 var Notificacion = require('../models/notificacion');

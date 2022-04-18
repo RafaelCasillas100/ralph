@@ -11524,7 +11524,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this._usuarioService.prepararContra(this.usuario._id).subscribe(function (response) {
             if (response) {
-              window.location.href = 'whatsapp://send?phone=52' + _this58.usuario.telefono + '&text=Tu%20cuenta%20est%C3%A1%20lista%20para%20que%20le%20cambies%20la%20contrase%C3%B1a.%20Para%20continuar,%20accede%20al%20siguiente%20enlace:%20https://ralph.com.mx/nueva-contra/' + _this58.usuario._id;
+              window.location.href = 'whatsapp://send?phone=52' + _this58.usuario.telefono + '&text=Tu%20cuenta%20est%C3%A1%20lista%20para%20que%20le%20cambies%20la%20contrase%C3%B1a.%20Para%20continuar,%20accede%20al%20siguiente%20enlace:%20https://ralph.tk/nueva-contra/' + _this58.usuario._id; // window.location.href = 'whatsapp://send?phone=52' + this.usuario.telefono + '&text=Tu%20cuenta%20est%C3%A1%20lista%20para%20que%20le%20cambies%20la%20contrase%C3%B1a.%20Para%20continuar,%20accede%20al%20siguiente%20enlace:%20https://ralph.com.mx/nueva-contra/' + this.usuario._id;
             }
           }, function (error) {
             var errorMessage = error;
@@ -15842,9 +15842,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "checkURL",
         value: function checkURL() {
-          if (window.location.host == 'www.ralph.com.mx') {
-            window.location.replace('https://ralph.com.mx');
-          } // console.log(window.location.pathname);
+          if (window.location.host == 'www.ralph.tk') {
+            window.location.replace('https://ralph.tk');
+          } // if(window.location.host == 'www.ralph.com.mx'){
+          //     window.location.replace('https://ralph.com.mx')
+          // }
+          // console.log(window.location.pathname);
           // console.log(document.URL);
 
         }
@@ -30293,7 +30296,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           selBox.style.left = '0';
           selBox.style.top = '0';
           selBox.style.opacity = '0';
-          selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
+          selBox.value = 'https://ralph.tk/restaurant/' + restauranteId; // selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
+
           document.body.appendChild(selBox);
           selBox.focus();
           selBox.select();
@@ -30580,7 +30584,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "p", 44);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "https://ralph.com.mx/restaurant/ ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "https://ralph.tk/restaurant/ ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "br");
 
@@ -33709,7 +33713,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p", 102);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "https://ralph.com.mx/restaurant/ ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "https://ralph.tk/restaurant/ ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
 
@@ -34011,7 +34015,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           selBox.style.left = '0';
           selBox.style.top = '0';
           selBox.style.opacity = '0';
-          selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
+          selBox.value = 'https://ralph.tk/restaurant/' + restauranteId; // selBox.value = 'https://ralph.com.mx/restaurant/' + restauranteId;
+
           document.body.appendChild(selBox);
           selBox.focus();
           selBox.select();
@@ -41194,8 +41199,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     });
 
     var GLOBAL = {
-      // url: 'https://ralph.com.mx/api/'
-      url: 'http://localhost:3000/api/'
+      url: 'https://ralph.tk/api/' // url: 'https://ralph.com.mx/api/'
+      // url: 'http://localhost:3000/api/'
+
     };
     /***/
   },
