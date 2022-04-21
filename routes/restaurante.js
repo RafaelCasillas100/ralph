@@ -19,12 +19,12 @@ api.post('/crear-seccion-restaurante/:id', md_auth.ensureAuth, RestauranteContro
 api.put('/actualizar-seccion-restaurante/:res/:sec', md_auth.ensureAuth, RestauranteControler.actualizarSeccion);
 api.get('/obtener-seccion-restaurante/:id', RestauranteControler.obtenerSeccion);
 api.get('/obtener-secciones-restaurantes/:id/:who/:page?', RestauranteControler.obtenerSecciones);
-api.delete('/eliminar-seccion/:id', RestauranteControler.eliminarSeccion);
+api.delete('/eliminar-seccion/:id', md_auth.ensureAuth, RestauranteControler.eliminarSeccion);
 api.get('/credito/:id/:num/:can', md_auth.ensureAuth, RestauranteControler.actualizarCredito);
 api.get('/alta-restaurante/:id/:status', md_auth.ensureAuth, RestauranteControler.darDeAltaRestaurante);
 api.post('/crear-horario', md_auth.ensureAuth, RestauranteControler.crearHorario);
 api.get('/abrirrestaurantes/:con/:horas', md_auth.ensureAuth, RestauranteControler.abrirRestaurantes);
-api.get('/obtener-horario/:res', md_auth.ensureAuth, RestauranteControler.obtenerHorario);
+api.get('/obtener-horario/:res', RestauranteControler.obtenerHorario);
 api.get('/agregar-telefono/:id/:tel', md_auth.ensureAuth, RestauranteControler.agregarTelefono);
 api.get('/opciones-restaurante/:id/:op', md_auth.ensureAuth, RestauranteControler.opcionesRestaurante);
 api.get('/servicioDom/:id/:op', md_auth.ensureAuth, RestauranteControler.servicioDom);
